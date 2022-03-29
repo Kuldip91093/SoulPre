@@ -1,5 +1,8 @@
-/*fonts css start*/
-
+fonts css start*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Noto+Sans+JP:wght@300;400;500;700&family=Roboto:wght@400;500;700&display=swap');
+/*font-family: 'Montserrat', sans-serif;
+font-family: 'Noto Sans JP', sans-serif;
+font-family: 'Roboto', sans-serif;*/
 /*fonts css end*/
 
 /*common css start*/
@@ -55,6 +58,49 @@ img{
     }
 }
 /*common css end*/
+
+/*commmon grid css start*/
+.custom_container {
+    max-width: 1110px;
+    padding: 0px 15px;
+    margin: 0px auto;
+}
+.custom_row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin: 0px -15px;
+}
+.custom_row_reverse {
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+}
+.custom_col_4 {
+    -ms-flex: 0 0 33.33%;
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+    padding: 0 15px;
+}
+.custom_col_6 {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding: 0 15px;
+}
+.custom_col_8 {
+    -ms-flex: 0 0 66.67%;
+    flex: 0 0 66.67%;
+    max-width: 66.67%;
+    padding: 0 15px;
+}
+.custom_col_12 {
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding: 0 15px;
+}
+/*commmon grid css end*/
 
 /*page pre-loader css start*/
 .loader-wrapper {
@@ -255,6 +301,65 @@ img{
 /*animations css end*/
 
 /*header section css start*/
+.site_header {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+}
+.site_header a.logo_img {
+    margin-left: 30px;
+}
+.site_header a.logo_img img {
+    max-width: 211px;
+}
+.site_header nav.custom_navbar ul {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.site_header nav.custom_navbar ul li:not(:first-child) {
+    margin-left: 30px;
+}
+.site_header nav.custom_navbar ul li.number_btn {
+    margin-left: 50px;
+}
+.site_header nav.custom_navbar ul li.inquiry_btn {
+    margin-left: 20px;
+}
+.site_header nav.custom_navbar ul li a {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: #333333;
+}
+.site_header nav.custom_navbar ul li a span {
+    display: table;
+    text-align: right;
+    padding-right: 4px;
+    margin-left: auto;
+    font-size: 10px;
+    font-weight: 500;
+    color: #ED751E;
+}
+.site_header nav.custom_navbar ul li.number_btn a {
+    font-size: 18px;
+}
+.site_header nav.custom_navbar ul li.inquiry_btn a {
+    font-size: 18px;
+    color: #fff;
+    background-color: #E66925;
+    height: 95px;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+}
 .navbar_toggler {
     padding: 0;
     height: 35px;
@@ -318,4 +423,4 @@ img{
     transition: bottom 75ms ease,transform 75ms cubic-bezier(.215,.61,.355,1) 0.12s;
     transform: rotate(-90deg);
 }
-/*header section css end*/
+/*header section css end
