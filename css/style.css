@@ -1,4 +1,4 @@
-fonts css start*/
+/*fonts css start*/
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Noto+Sans+JP:wght@300;400;500;700&family=Roboto:wght@400;500;700&display=swap');
 /*font-family: 'Montserrat', sans-serif;
 font-family: 'Noto Sans JP', sans-serif;
@@ -27,9 +27,9 @@ body.no_scroll {
 a, button, input[type=submit], select{
     cursor: pointer;
 }
-a, a:hover, a:focus, 
+a, a:hover, a:focus,
 button, button:hover, button:focus,
-input, input:hover, input:focus, 
+input, input:hover, input:focus,
 textarea, textarea:hover, textarea:focus,
 select, select:hover, select:focus{
     outline: 0;
@@ -183,7 +183,7 @@ img{
 }
 .io.rl {
     -webkit-transform: translate3d(80px, 0, 0);
-    transform: translate3d(80px, 0, 0); 
+    transform: translate3d(80px, 0, 0);
 }
 .io.upL {
     -webkit-transform: translate3d(0, 80px, 0);
