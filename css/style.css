@@ -338,7 +338,7 @@ img{
     margin-left: 30px;
 }
 .site_header nav.custom_navbar ul li.number_btn {
-    margin-left: 50px;
+    margin-left: 40px;
 }
 .site_header nav.custom_navbar ul li.inquiry_btn {
     margin-left: 20px;
@@ -357,6 +357,9 @@ img{
     font-size: 10px;
     font-weight: 500;
     color: #ED751E;
+}
+.site_header nav.custom_navbar ul li a i {
+    margin-right: 10px;
 }
 .site_header nav.custom_navbar ul li.number_btn a {
     font-size: 18px;
@@ -519,6 +522,9 @@ img{
     font-weight: 400;
     color: #080808;
 }
+.footer_content .footer_btn .footer_btn_inner a i {
+    margin-right: 10px;
+}
 .site_footer .copyright_text {
     background-color: #333333;
     text-align: center;
@@ -590,8 +596,8 @@ img{
         margin-right: 30px;
     }
     .footer_content .footer_btn_col {
-        flex: 0 0 328px;
-        max-width: 328px;
+        flex: 0 0 340px;
+        max-width: 340px;
     }
     .footer_content .footer_btn .footer_btn_inner a:first-child {
         width: 180px;
