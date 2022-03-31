@@ -1,3 +1,9 @@
+.custom_col_3{
+    -ms-flex: 0 0 25%;
+    flex: 0 0 25%;
+    max-width: 25%;
+    padding: 0 15px;
+}
 .site_breadcrumb{
     position: relative;
     width: 100%;
@@ -170,6 +176,233 @@
 .products_card_content a:hover,
 .products_card_content a:focus{
     color: #e66925;
+}
+
+
+.product_inquery{
+    width: 100%;
+    padding: 88px 0;
+}
+.product_inquery h2{
+    color: #ED751E;
+    font-size: 34px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    line-height: 1.2;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.product_inquery p{
+    color: #080808;
+    font-size: 16px;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 500;
+    line-height: 1.5;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.product_inquery .bttn_wrapper{
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+.product_inquery .bttn_wrapper a{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #333333;
+    background-color: #333333;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 500;
+    line-height: 1;
+    padding: 22px 38px 22px 68px;
+    transition: all 0.3s;
+}
+.product_inquery .bttn_wrapper a:hover,
+.product_inquery .bttn_wrapper a:focus{
+    background-color: #FFFFFF;
+    color: #333333;
+}
+.product_inquery .bttn_wrapper a img{
+    margin-left: 30px;
+    filter: invert(1);
+}
+.product_inquery .bttn_wrapper a:hover img,
+.product_inquery .bttn_wrapper a:focus img{
+    filter: invert(0);
+}
+
+.slash_heading{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.slash_heading h2{
+    position: relative;
+    display: inline-block;
+    color: #333333;
+    font-size: 30px;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 700;
+    line-height: 1.5;
+    padding: 0 72px;
+}
+.slash_heading h2:before,
+.slash_heading h2:after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 1.4px;
+    height: 45px;
+    background-color: #333333;
+}
+.slash_heading h2:before{
+    left: 0;
+    transform: rotate(-25deg);
+}
+.slash_heading h2:after{
+    right: 0;
+    transform: rotate(25deg);
+}
+.product_trouble .slash_heading{
+    margin-bottom: 80px;
+}
+.product_trouble .custom_row{
+    justify-content: center;
+}
+.product_trouble .custom_col_3{
+    margin-bottom: 35px;
+}
+.product_trouble_box{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color: #C05140;
+    padding: 40px 32px;
+    color: #FFFFFF;
+    font-size: 14px;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 500;
+    line-height: 2;
+    border-radius: 35px;
+}
+.product_trouble_box.radius_none_right{
+    border-radius: 35px 35px 0 35px;
+}
+.product_trouble_box.radius_none_left{
+    border-radius: 35px 35px 35px 0;
+}
+.product_trouble_bottombar{
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+}
+.product_trouble_bottombar img{
+    display: inline-block;
+}
+
+
+.product_solved{
+    width: 100%;
+    padding: 165px 0 173px;
+    text-align: center;
+}
+.product_solved h2{
+    color: #ED751E;
+    font-size: 30px;
+    font-family: 'Noto Sans JP', sans-serif;
+    line-height: 1.4;
+    margin-bottom: 48px;
+}
+.product_solved p{
+    width: 100%;
+    max-width: 790px;
+    margin: auto;
+    color: #333333;
+    font-size: 22px;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 700;
+    line-height: 1.6;
+    margin-bottom: 65px;
+}
+.product_solved img{
+    display: inline-block;
+}
+.product_solved .custom_col_6{
+    margin-bottom: 30px;
+}
+
+
+.product_feature h2{
+    color: #ED751E;
+    font-size: 30px;
+    font-family: 'Noto Sans JP', sans-serif;
+    line-height: 1.4;
+    margin-bottom: 48px;
+    text-align: center;
+    margin-bottom: 77px;
+}
+.product_feature .custom_col_4{
+    margin-bottom: 30px;
+}
+.product_feature_card{
+    position: relative;
+    width: 100%;
+    min-height: 100%;
+    padding: 22px 22px 26px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.16);
+    background-color: #FFFFFF;
+}
+.product_feature_card span{
+    position: absolute;
+    top: -34px;
+    right: 0;
+    color: #333333;
+    font-size: 34px;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 400;
+    line-height: 1;
+    transform: rotate(-10deg);
+}
+.product_feature_card img{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.product_feature_card h4{
+    color: #000000;
+    font-size: 16px;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 700;
+    line-height: 2;
+    text-align: center;
+    margin-bottom: 12px;
+}
+.product_feature_card p{
+    color: #080808;
+    font-size: 14px;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 400;
+    line-height: 2.1;
+}
+
+.product_certificate{
+    width: 100%;
+    padding: 58px 0;
+    text-align: center;
+}
+.product_certificate .slash_heading{
+    margin-bottom: 64px;
+}
+.product_certificate .custom_col_6{
+    margin-bottom: 30px;
+}
+.product_certificate img{
+    display: inline-block;
+}
+.product_certificate_video{
+    padding: 30px 0;
 }
 
 
