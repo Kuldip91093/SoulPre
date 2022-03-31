@@ -806,4 +806,10 @@ button.form_submit img {
         padding: 15px;
     }
 }
+@media (max-width: 519px) {
+    .site_header nav.custom_navbar {
+        right: -100%;
+        width: 100%;
+    }
+}
 /*reponsive css end*/
