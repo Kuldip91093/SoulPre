@@ -1,0 +1,168 @@
+/*fonts css start*/
+/*font-family: 'Montserrat', sans-serif;
+font-family: 'Noto Sans JP', sans-serif;
+font-family: 'Roboto', sans-serif;*/
+/*fonts css end*/
+
+/*banner section css start*/
+.banner_image {
+    width: 89.2vw;
+    position: relative;
+    padding-top: 52.5%;
+    margin-left: auto;
+}
+.banner_section .banner_content {
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    width: 100%;
+}
+.banner_section .banner_content:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 1015px;
+    height: 618px;
+    background-color: #333333;
+    z-index: -1;
+}
+.banner_image img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    max-width: 100%;
+    max-height: 100%;
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+}
+.banner_section .banner_content h1 {
+    position: absolute;
+    left: 40px;
+    bottom: 100px;
+    color: #fff;
+    font-size: 50px;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 700;
+    letter-spacing: -3px;
+}
+.banner_section .banner_content h1 span.text_small {
+    font-size: 48px;
+}
+.banner_section .banner_content h1 span.text_big {
+    font-size: 60px;
+}
+.banner_section .banner_content p {
+    margin: 31px 0 31px 40px;
+    color: #fff;
+    font-size: 14px;
+}
+.banner_image p {
+    z-index: 1;
+    position: absolute;
+    bottom: 120px;
+    right: -40px;
+    transform: rotate(90deg);
+    padding-right: 70px;
+    margin: 0 !important;
+}
+.banner_image p:before {
+    content: '';
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0;
+    width: 56px;
+    height: 1px;
+    background-color: #fff;
+    margin: auto;
+}
+/*banner section css end*/
+
+/*strengths section css start*/
+.strengths_section {
+    padding: 90px 0;
+    position: relative;
+}
+.strengths_section .heading {
+    text-align: center;
+    display: table;
+    padding: 0 15px;
+    margin: auto;
+}
+.strengths_point_box {
+    position: relative;
+    margin: 31px 0;
+    display: inline-block;
+    width: 100%;
+}
+.strengths_point_box .custom_container {
+    position: relative;
+}
+.strengths_point_box .custom_row {
+    margin: 0;
+}
+.strengths_point_box .custom_col_image {
+    flex: 0 0 386px;
+    max-width: 386px;
+}
+.strengths_point_box .custom_col_text {
+    flex: 0 0 calc(100% - 386px);
+    max-width: calc(100% - 386px);
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-end;
+}
+/*.strengths_point_box .strengths_text {}*/
+.strengths_point_box .strengths_text:before {
+    content: '';
+    position: absolute;
+    left: 15px;
+    right: 15px;
+    bottom: 0;
+    height: 283px;
+    box-shadow: 3px 3px 10px 0px rgb(0 0 0 / 16%);
+    z-index: -1;
+}
+.strengths_point_box .strengths_text .strengths_text_inner {
+    position: relative;
+    z-index: 1;
+    background-color: #fff;
+    padding: 50px;
+}
+.strengths_point_box .strengths_text h4 {
+    font-size: 18px;
+    font-weight: 700;
+    font-family: 'Noto Sans JP', sans-serif;
+    margin-bottom: 30px;
+    line-height: 25px;
+}
+.strengths_point_box .strengths_text p {
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Noto Sans JP', sans-serif;
+    line-height: 32px;
+}
+.strengths_point_box .strengths_text h3 {
+    font-size: 36px;
+    font-weight: 400;
+    color: #ED751E;
+    position: absolute;
+    top: -38px;
+    right: 30px;
+    transform: rotate(-10deg);
+}
+.strengths_point_box .strengths_text h3 span {
+    font-size: 54px;
+    font-weight: 400;
+}
+/*strengths section css end*/
+
+/*reponsive css start*/
+@media (max-width: 1024px) {}
+@media (max-width: 900px) {}
+@media (max-width: 675px) {}
+/*reponsive css end*/
