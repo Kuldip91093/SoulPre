@@ -4,9 +4,8 @@
 	<title>SoulPre</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" type="text/css" href="css/responsive.css">
+	<link rel="stylesheet" href="css/jquery-ui.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link rel="stylesheet" type="text/css" href="css/style-d.css">
 	<link rel="icon" href="images/favicon.png">
 </head>
 <body>
@@ -24,13 +23,13 @@
 					<a href="#">NEWS<span>お知らせ</span></a>
 				</li>
 				<li>
-					<a href="#">COMPANY<span>会社概要</span></a>
+					<a href="company.html">COMPANY<span>会社概要</span></a>
 				</li>
 				<li>
-					<a href="#">PRODUCTS<span>製品情報</span></a>
+					<a href="products.html">PRODUCTS<span>製品情報</span></a>
 				</li>
 				<li>
-					<a href="#">COLUMN<span>コラム</span></a>
+					<a href="products.html">COLUMN<span>コラム</span></a>
 				</li>
 				<li class="number_btn">
 					<a href="tel:0273816594"><i class="fas fa-phone-alt"></i>027-381-6594</a>
@@ -234,7 +233,7 @@
 							<h3>NEWS</h3>
 							<p>新着情報</p>
 						</div>
-						<div class="news_btn">
+						<div class="news_btn cpc">
 							<a href="#" class="form_submit">詳しくみる <img src="images/icon_arrow_right_white.png" align="arrow icon"></a>
 						</div>
 					</div>
@@ -278,17 +277,20 @@
 						</div>
 					</div>
 				</div>
+				<div class="news_btn csp">
+					<a href="#" class="form_submit">詳しくみる <img src="images/icon_arrow_right_white.png" align="arrow icon"></a>
+				</div>
 			</div>
 		</div>
 	</section>
-	<section class="contact_page_section contact_section">
+	<section class="product_contact_section contact_section">
 		<div class="custom_container">
-			<p class="inquiry_text">お困りごとやご相談などお気軽にお問い合わせください。</p>
+			<div class="slash_heading">
+				<h2>お困りごとやご相談などお気軽にお問い合わせください。</h2>
+			</div>
 			<div class="form_shadow_box">
-				<div class="heading">
-					<h3>CONTACT</h3>
-					<p>お問い合わせフォーム</p>
-				</div>
+				<h2>CONTACT</h2>
+				<h5>お問い合わせフォーム</h5>
 				<form>
 					<div class="single_input">
 						<label>企業名</label>
@@ -382,8 +384,9 @@
 		</div>
 	</footer>
 	<script src="js/jquery.min.js"></script>
-	<script src="js/fonts-awesome-5.js"></script>
-	<script src="js/intersection-observer-polyfill.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/fonts-awesome-5.js"></script>
+    <script src="js/intersection-observer-polyfill.js"></script>
 	<script src="js/custom.js"></script>
 </body>
 </html>
