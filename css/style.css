@@ -84,6 +84,12 @@ img{
     -ms-flex-direction: row-reverse;
     flex-direction: row-reverse;
 }
+.custom_col_3 {
+    -ms-flex: 0 0 25%;
+    flex: 0 0 25%;
+    max-width: 25%;
+    padding: 0 15px;
+}
 .custom_col_4 {
     -ms-flex: 0 0 33.33%;
     flex: 0 0 33.33%;
@@ -622,7 +628,7 @@ img{
     margin-left: 25px;
     color: #808080;
 }
-button.form_submit {
+.form_submit {
     background-color: #333333;
     color: #ffffff;
     display: flex;
@@ -639,10 +645,10 @@ button.form_submit {
     font-family: 'Noto Sans JP', sans-serif;
     font-weight: 600;
 }
-button.form_submit:hover {
+.form_submit:hover {
     background-color: #ED751E;
 }
-button.form_submit img {
+.form_submit img {
     margin-left: 10px;
 }
 /*contact page css end*/
@@ -772,7 +778,7 @@ button.form_submit img {
     .single_input textarea {
         height: 150px;
     }
-    button.form_submit {
+    .form_submit {
         max-width: 240px;
         height: 50px;
     }
