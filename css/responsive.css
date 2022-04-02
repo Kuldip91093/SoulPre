@@ -451,6 +451,7 @@
     font-weight: 500;
     line-height: 1;
     margin-bottom: 22px;
+    border-collapse: collapse;
 }
 .product_forklift table thead{
     background-color: #F5F5F5;
@@ -649,6 +650,120 @@
     margin-bottom: 48px;
 }
 
+.company_greeting_section{
+    width: 100%;
+    padding: 74px 0 40px;
+}
+.company_greeting_section h2{
+    color: #ED751E;
+    font-size: 30px;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 700;
+    line-height: 1.3;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.company_greeting_box{
+    position: relative;
+    width: 100%;
+    max-width: calc(100% - 48px);
+    margin-left: auto;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.16);
+    padding: 40px 48px;
+    margin-top: 116px;
+}
+.company_greeting_box:after{
+    content: 'MESSAGE';
+    position: absolute;
+    top: -105px;
+    right: 0;
+    color: #F5F5F5;
+    font-size: 120px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    line-height: 1;
+}
+.company_greeting_box .flex_box{
+    display: flex;
+}
+.company_greeting_box .flex_box .img{
+    position: relative;
+    width: 235px;
+}
+.company_greeting_box .flex_box .para{
+    width: calc(100% - 235px);
+}
+.company_greeting_box img{
+    position: absolute;
+    bottom: 26px;
+    right: 63px;
+    max-width: inherit;
+}
+.company_greeting_box p{
+    color: #080808;
+    font-size: 16px;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 400;
+    line-height: 2;
+}
+.company_greeting_box .user_dtl{
+    text-align: right;
+}
+
+
+.company_profile_section{
+    width: 100%;
+    padding: 40px 0 100px;
+}
+.company_profile_section h2{
+    color: #ED751E;
+    font-size: 30px;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 700;
+    line-height: 1.3;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.company_profile_section table{
+    width: 100%;
+    color: #080808;
+    font-size: 16px;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+    border-collapse: collapse;
+}
+.company_profile_section table th{
+    min-width: 218px;
+    border-top: 1px solid #333333;
+    padding: 30px 0;
+    text-align: left;
+    font-weight: 700;
+    vertical-align: top;
+}
+.company_profile_section table td{
+    border-top: 1px solid #A9A9A9;
+    padding: 30px 15px 30px 70px;
+}
+.company_profile_section table tr:first-child th,
+.company_profile_section table tr:first-child td{
+    border-top: none;
+}
+.company_profile_section table tr:last-child th{
+    border-bottom: 1px solid #333333;
+}
+.company_profile_section table tr:last-child td{
+    border-bottom: 1px solid #A9A9A9;
+}
+.company_profile_section table .map_iframe{
+    border: none;
+    padding: 0 0 30px 0;
+}
+.company_profile_section table iframe{
+    width: 100%;
+    height: 230px;
+}
+
 @media (max-width: 1166px) {
     .slash_heading h2{
         font-size: 24px;
@@ -677,6 +792,13 @@
     .customer_voice_section:after{
         font-size: 100px;
         bottom: -11px;
+    }
+    .company_greeting_box img{
+        width: 100%;
+    }
+    .company_greeting_box:after{
+        font-size: 100px;
+        top: -88px;
     }
 }
 @media (max-width: 900px) {
@@ -721,6 +843,25 @@
         font-size: 20px;
         margin-bottom: 15px;
     }
+    .slash_heading h2{
+        font-size: 22px;
+        padding: 0 30px;
+    }
+    .slash_heading h2:before, .slash_heading h2:after{
+        height: 40px;
+    }
+    .product_inquery h2{
+        font-size: 24px;
+    }
+    .product_inquery .bttn_wrapper a{
+        padding: 18px 20px 18px 30px;
+    }
+    .product_solved h2{
+        font-size: 24px;
+    }
+    .product_solved p{
+        font-size: 16px;
+    }
     .product_trouble_box{
         padding: 20px 15px;
         border-radius: 12px;
@@ -756,10 +897,65 @@
         font-size: 70px;
         bottom: -8px;
     }
+    .company_greeting_section{
+        padding: 50px 0 15px;
+    }
+    .company_greeting_section h2{
+        font-size: 24px;
+    }
+    .company_greeting_box:after{
+        font-size: 80px;
+        top: -70px;
+    }
+    .company_greeting_box{
+        max-width: 100%;
+        margin-top: 80px;
+    }
+    .company_greeting_box img{
+        position: static;
+        width: 90%;
+    }
+    .company_greeting_box{
+        padding: 30px;
+    }
+    .company_greeting_box .flex_box{
+        display: block;
+    }
+    .company_greeting_box .flex_box .img{
+        width: auto;
+        float: left;
+        margin-bottom: 24px;
+    }
+    .company_greeting_box .flex_box .para{
+        float: left;
+        width: 100%;
+    }
+    .company_profile_section{
+        padding: 30px 0 50px;
+    }
+    .company_profile_section h2{
+        font-size: 24px;
+        margin-bottom: 30px;
+    }
+    .company_profile_section table th{
+        min-width: 150px;
+    }
+    .company_profile_section table th{
+        padding: 15px 0;
+    }
+    .company_profile_section table td{
+        padding: 15px 15px 15px 30px;
+    }
+    .company_profile_section table .map_iframe{
+        padding: 0 0 15px 0;
+    }
 }
 @media (max-width: 675px) {
     .site_breadcrumb{
         height: 180px;
+    }
+    .slash_heading h2{
+        font-size: 20px;
     }
     .collection_bttn_group ul{
         justify-content: center;
@@ -778,5 +974,87 @@
     }
     .products_card_content{
         width: 100%;
+    }
+    .product_inquery{
+        padding: 50px 0;
+    }
+    .product_trouble .slash_heading{
+        margin-bottom: 50px;
+    }
+    .product_trouble .custom_col_3{
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    .product_trouble_box,
+    .product_trouble_box.radius_none_right,
+    .product_trouble_box.radius_none_left{
+        border-radius: 12px;
+    }
+    .product_solved{
+        padding: 100px 0 30px;
+    }
+    .product_solved .custom_col_6{
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .product_feature{
+        padding-top: 50px;
+    }
+    .product_feature .custom_col_4{
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin-bottom: 50px;
+    }
+    .product_forklift .custom_col_6{
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .customer_voice_section .custom_col_4{
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin-bottom: 50px;
+    }
+    .product_faq{
+        padding: 50px 0 30px;
+    }
+    .product_faq .jquery_accordion .tag{
+        font-size: 18px;
+        margin-right: 15px;
+    }
+    .product_faq .jquery_accordion h3{
+        font-size: 16px;
+        padding: 15px 30px 15px 15px;
+        line-height: 1.5;
+    }
+    .product_faq .jquery_accordion h3:after{
+        right: 10px;
+    }
+    .product_faq .jquery_accordion .answer{
+        padding: 15px;
+    }
+    .product_contact_section{
+        padding: 30px 0 50px;
+    }
+    .company_greeting_box:after{
+        font-size: 50px;
+        top: -45px;
+    }
+    .company_greeting_box{
+        padding: 15px;
+    }
+    .company_greeting_box .flex_box .img{
+        float: none;
+        max-width: 235px;
+    }
+    .company_greeting_box .flex_box .para{
+        float: none;
+    }
+    .company_profile_section table th{
+        min-width: 100px;
     }
 }
