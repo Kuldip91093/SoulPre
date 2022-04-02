@@ -8,7 +8,7 @@
     text-align: center;
 }
 
-
+/* breadcrumb css start */
 .site_breadcrumb{
     position: relative;
     width: 100%;
@@ -48,15 +48,48 @@
     font-weight: 500;
     line-height: 1.5;
 }
+/* breadcrumb css end */
 
+/* slash heading css start */
+.slash_heading{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.slash_heading h2{
+    position: relative;
+    display: inline-block;
+    color: #333333;
+    font-size: 30px;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 700;
+    line-height: 1.5;
+    padding: 0 72px;
+}
+.slash_heading h2:before,
+.slash_heading h2:after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 1.4px;
+    height: 45px;
+    background-color: #333333;
+}
+.slash_heading h2:before{
+    left: 0;
+    transform: rotate(-25deg);
+}
+.slash_heading h2:after{
+    right: 0;
+    transform: rotate(25deg);
+}
+/* slash heading css end */
+
+/* product page css start */
 .collection_bttn_group{
     width: 100%;
     padding: 65px 0;
 }
-/* .collection_bttn_group ul{
-    display: flex;
-    flex-wrap: wrap;
-} */
 .collection_bttn_group ul{
     display: flex;
     flex-wrap: wrap;
@@ -82,41 +115,6 @@
     text-align: center;
     padding: 18px;
 }
-
-.custom_pagination{
-    width: 100%;
-    padding: 25px 0;
-}
-.custom_pagination ul{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-.custom_pagination li{
-    padding: 11px;
-}
-.custom_pagination a{
-    width: 55px;
-    height: 55px;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    border: 1.5px solid #333333;
-    background-color: #FFFFFF;
-    color: #333333;
-    font-size: 20px;
-    font-family: 'Noto Sans JP', sans-serif;
-    font-weight: 500;
-    line-height: 1;
-    transition: all 0.3s;
-}
-.custom_pagination a:hover,
-.custom_pagination a:focus,
-.custom_pagination a.active{
-    background-color: #333333;
-    color: #FFFFFF;
-}
-
 
 .products_section{
     width: 100%;
@@ -238,39 +236,42 @@
 .product_inquery .bttn_wrapper a:focus img{
     filter: invert(0);
 }
-
-.slash_heading{
+.custom_pagination{
     width: 100%;
-    text-align: center;
-    margin-bottom: 30px;
+    padding: 25px 0;
 }
-.slash_heading h2{
-    position: relative;
-    display: inline-block;
+.custom_pagination ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.custom_pagination li{
+    padding: 11px;
+}
+.custom_pagination a{
+    width: 55px;
+    height: 55px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 1.5px solid #333333;
+    background-color: #FFFFFF;
     color: #333333;
-    font-size: 30px;
+    font-size: 20px;
     font-family: 'Noto Sans JP', sans-serif;
-    font-weight: 700;
-    line-height: 1.5;
-    padding: 0 72px;
+    font-weight: 500;
+    line-height: 1;
+    transition: all 0.3s;
 }
-.slash_heading h2:before,
-.slash_heading h2:after{
-    content: '';
-    position: absolute;
-    bottom: 0;
-    width: 1.4px;
-    height: 45px;
+.custom_pagination a:hover,
+.custom_pagination a:focus,
+.custom_pagination a.active{
     background-color: #333333;
+    color: #FFFFFF;
 }
-.slash_heading h2:before{
-    left: 0;
-    transform: rotate(-25deg);
-}
-.slash_heading h2:after{
-    right: 0;
-    transform: rotate(25deg);
-}
+/* product page css end */
+
+/* product Detail page css start */
 .product_trouble .slash_heading{
     margin-bottom: 80px;
 }
@@ -307,8 +308,6 @@
 .product_trouble_bottombar img{
     display: inline-block;
 }
-
-
 .product_solved{
     position: relative;
     width: 100%;
@@ -649,7 +648,10 @@
 .product_contact_section .slash_heading{
     margin-bottom: 48px;
 }
+/* product Detail page css end */
 
+
+/* company page css start */
 .company_greeting_section{
     width: 100%;
     padding: 74px 0 40px;
@@ -763,6 +765,7 @@
     width: 100%;
     height: 230px;
 }
+/* company page css end */
 
 @media (max-width: 1166px) {
     .slash_heading h2{
