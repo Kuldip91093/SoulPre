@@ -554,6 +554,14 @@ img{
     padding: 65px 15px 85px;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.16);
 }
+.form_shadow_box h2{
+    font-size: 38px;
+    line-height: 50px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    text-align: center;
+    color: #333333;
+}
 .form_shadow_box h4 {
     font-size: 30px;
     line-height: 44px;
@@ -561,6 +569,15 @@ img{
     font-weight: 700;
     text-align: center;
     padding: 0px 0px 60px;
+    color: #ED751E;
+}
+.form_shadow_box h5 {
+    font-size: 13px;
+    line-height: 20px;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 700;
+    text-align: center;
+    padding: 0px 0px 35px;
     color: #ED751E;
 }
 .single_input {
@@ -751,10 +768,17 @@ img{
     .form_shadow_box {
         padding: 25px 15px;
     }
+    .form_shadow_box h2 {
+        font-size: 30px;
+        line-height: 44px;
+    }
     .form_shadow_box h4 {
         padding: 0px 0px 25px;
         font-size: 24px;
         line-height: 38px;
+    }
+    .form_shadow_box h5 {
+        padding: 0px 0px 25px;
     }
     .address_input_row span.t_pin {
         flex: 0 0 20px;
