@@ -357,6 +357,21 @@ img{
     font-size: 16px;
     font-weight: 600;
     color: #333333;
+    position: relative;
+    transition: all 0.4s;
+}
+.site_header nav.custom_navbar ul li a:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 18px;
+    background-color: #e66925;
+    height: 1px;
+    width: 0px;
+    transition: all 0.4s;
+}
+.site_header nav.custom_navbar ul li a:hover:before {
+    width: 100%;
 }
 .site_header nav.custom_navbar ul li a span {
     display: table;
@@ -373,6 +388,12 @@ img{
 .site_header nav.custom_navbar ul li.number_btn a {
     font-size: 18px;
 }
+.site_header nav.custom_navbar ul li.number_btn a:hover {
+    color: #E66925;
+}
+.site_header nav.custom_navbar ul li.number_btn a:before {
+    top: 26px;
+}
 .site_header nav.custom_navbar ul li.inquiry_btn a {
     font-size: 18px;
     color: #fff;
@@ -381,6 +402,14 @@ img{
     display: flex;
     align-items: center;
     padding: 10px 20px;
+    transition: all 0.4s;
+}
+.site_header nav.custom_navbar ul li.inquiry_btn a:before {
+    display: none;
+} 
+.footer_content .footer_btn .footer_btn_inner a:first-child:hover,
+.site_header nav.custom_navbar ul li.inquiry_btn a:hover {
+    background-color: #333333;
 }
 .navbar_toggler {
     padding: 0;
@@ -486,7 +515,8 @@ img{
     color: #333333;
     font-weight: 400;
 }
-.footer_content .footer_text p {
+.footer_content .footer_text a {
+    display: block;
     font-size: 12px;
     color: #737373;
     font-weight: 500;
@@ -518,6 +548,7 @@ img{
     color: #fff;
     text-align: center;
     font-weight: 700;
+    transition: all 0.4s;
 }
 .footer_content .footer_btn .footer_btn_inner a:last-child {
     font-size: 18px;
@@ -580,7 +611,7 @@ img{
     background-color: #333333;
     z-index: -1;
 }
-.banner_image img {
+.banner_image video {
     position: absolute;
     top: 0;
     left: 0;
@@ -623,7 +654,7 @@ img{
     padding-right: 70px;
     margin: 0 !important;
 }
-.banner_image p:before {
+.banner_image p span {
     content: '';
     position: absolute;
     top: 0px;
@@ -633,6 +664,22 @@ img{
     height: 1px;
     background-color: #fff;
     margin: auto;
+    overflow: hidden;
+}
+.banner_image p span:after {
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    bottom: 0px;
+    height: 1px;
+    width: 20px;
+    animation: scroller 2s ease infinite;
+    background-color: #ed6d00;
+}
+@keyframes scroller {
+  from {left: 0;}
+  to {left: calc(100% - 20px);}
 }
 /*banner section css end*/
 
@@ -749,13 +796,14 @@ img{
 }
 .strengths_point_box .strengths_text h3 {
     font-size: 36px;
-    font-weight: 400;
     color: #ED751E;
     position: absolute;
     top: -38px;
     right: 30px;
     transform: rotate(-10deg);
-    font-family: 'Noto Sans JP', sans-serif
+    font-family: duos-brush, sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 .strengths_point_box .strengths_text h3 span {
     font-size: 54px;
@@ -1301,6 +1349,14 @@ img{
     font-weight: 500;
     line-height: 1.5;
 }
+.site_breadcrumb img.products_details_image {
+    position: absolute;
+    bottom: 12px;
+    right: 86px;
+    width: auto;
+    height: auto;
+    max-width: 149px;
+}
 /* breadcrumb css end */
 
 /* slash heading css start */
@@ -1637,7 +1693,9 @@ img{
     right: 0;
     color: #333333;
     font-size: 34px;
-    font-family: 'Noto Sans JP', sans-serif;
+    font-family: duos-brush, sans-serif;
+    font-weight: 400;
+    font-style: normal;
     font-weight: 400;
     line-height: 1;
     transform: rotate(-10deg);
@@ -1677,10 +1735,28 @@ img{
 .product_certificate img{
     display: inline-block;
 }
-.product_certificate_video{
+.product_certificate_video {
     padding: 30px 0;
+    max-width: 870px;
+    margin: auto;
 }
-
+.video_wrapper {
+    overflow: hidden;
+    padding-top: 56.3%;
+    position: relative;
+}
+.video_wrapper video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    max-width: 100%;
+    max-height: 100%;
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+}
 .product_forklift{
     padding: 0 0 15px;
 }
@@ -1788,10 +1864,11 @@ img{
     right: 0;
     color: #333333;
     font-size: 34px;
-    font-family: 'Noto Sans JP', sans-serif;
-    font-weight: 400;
     line-height: 1;
     transform: rotate(-10deg);
+    font-family: duos-brush, sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 .customer_voice_card img{
     width: 158px;
@@ -2022,6 +2099,12 @@ img{
     .custom_container {
         max-width: 900px;
     }
+    .site_header nav.custom_navbar ul li:not(:first-child) {
+        margin-left: 22px;
+    }
+    .site_header nav.custom_navbar ul li.number_btn {
+        margin-left: 34px;
+    }
     .banner_section .banner_content:before {
         width: 935px;
         height: 548px;
@@ -2123,6 +2206,9 @@ img{
         justify-content: center;
         padding: 10px;
         min-width: 160px;
+    }
+    .site_header nav.custom_navbar ul li a:before {
+        display: none !important;
     }
     .site_footer .footer_content {
         padding: 60px 0;
