@@ -388,9 +388,6 @@ img{
 .site_header nav.custom_navbar ul li.number_btn a {
     font-size: 18px;
 }
-.site_header nav.custom_navbar ul li.number_btn a:hover {
-    color: #E66925;
-}
 .site_header nav.custom_navbar ul li.number_btn a:before {
     top: 26px;
 }
@@ -522,6 +519,10 @@ img{
     font-weight: 500;
     font-family: 'Noto Sans JP', sans-serif;
     margin-top: 5px;
+    transition: all 0.4s;
+}
+.footer_content .footer_text a:hover {
+    color: #e66925;
 }
 .footer_text .footer_text_inner {
     margin-top: 25px;
@@ -661,7 +662,7 @@ img{
     right: 0px;
     bottom: 0;
     width: 56px;
-    height: 1px;
+    height: 2px;
     background-color: #fff;
     margin: auto;
     overflow: hidden;
@@ -672,7 +673,7 @@ img{
     left: 0px;
     top: 0px;
     bottom: 0px;
-    height: 1px;
+    height: 2px;
     width: 20px;
     animation: scroller 2s ease infinite;
     background-color: #ed6d00;
@@ -1356,6 +1357,7 @@ img{
     width: auto;
     height: auto;
     max-width: 149px;
+    z-index: 1;
 }
 /* breadcrumb css end */
 
@@ -1515,33 +1517,6 @@ img{
     width: 100%;
     text-align: center;
     margin-top: 30px;
-}
-.product_inquery .bttn_wrapper a{
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    border: 2px solid #333333;
-    background-color: #333333;
-    color: #FFFFFF;
-    font-size: 16px;
-    font-family: 'Noto Sans JP', sans-serif;
-    font-weight: 500;
-    line-height: 1;
-    padding: 22px 38px 22px 68px;
-    transition: all 0.3s;
-}
-.product_inquery .bttn_wrapper a:hover,
-.product_inquery .bttn_wrapper a:focus{
-    background-color: #FFFFFF;
-    color: #333333;
-}
-.product_inquery .bttn_wrapper a img{
-    margin-left: 30px;
-    filter: invert(1);
-}
-.product_inquery .bttn_wrapper a:hover img,
-.product_inquery .bttn_wrapper a:focus img{
-    filter: invert(0);
 }
 .custom_pagination{
     width: 100%;
@@ -2689,6 +2664,10 @@ img{
     .company_profile_section table .map_iframe{
         padding: 0 0 15px 0;
     }
+    .site_breadcrumb img.products_details_image {
+        right: 15px;
+        max-width: 120px;
+    }
 }
 @media (max-width: 675px) {
     .site_header {
@@ -2920,6 +2899,13 @@ img{
     }
     .company_profile_section table th{
         min-width: 100px;
+    }
+    .site_breadcrumb.products_details_breadcrumb {
+        height: 220px;
+        padding-bottom: 0px;
+    }
+    .site_breadcrumb.products_details_breadcrumb .breadcrumb_content {
+        padding-bottom: 40px;
     }
 }
 @media (max-width: 519px) {
